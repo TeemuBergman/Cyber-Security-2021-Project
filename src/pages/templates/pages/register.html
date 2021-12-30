@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>SecuMsgr - It's safe, we promise!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <img src="{% static 'logo.png' %}" class="logo-img" />
+            <h1 class="logo-text">SecuMsgr</h1>
+        </div>
+
+        <div class="side-right">
+            <form method="POST" class="register">
+                {% csrf_token %}
+                <p>Username</p>
+                <input name="username" type="text" required />
+                <p>Email</p>
+                <input name="email" type="email" required />
+                <p>Password</p>
+                <input name="password" type="password" required />
+                <button type="submit">Register!</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

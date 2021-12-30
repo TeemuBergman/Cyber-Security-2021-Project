@@ -1,0 +1,73 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "ADMIN",
+            "email": "admin@cs_project.org",
+            "password": "pbkdf2_sha256$320000$DEuLBnyuY2BfdIWeDHn9U1$Uogmc72M/C1xIiN2ANg5+332E2dV7LFOPG3H7rSS/G8=",
+            "is_superuser": 1,
+            "is_staff": 1
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "Chrissy",
+            "email": "chris@gmail.com",
+            "password": "pbkdf2_sha256$320000$rDomJFGz2dwroINCWgGiOZ$3YidXTd2nrJSais3958chbUVCeFBgMBB7XiJTQg26aI="
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "Nemo",
+            "email": "nemo@helsinki.fi",
+            "password": "pbkdf2_sha256$320000$ebB2ULs236RLKD0cxDRrpu$2jxH1Fbbn1NSdE7+pSjrsgRkBSqIj+O8kj9St7PMoH0="
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "username": "Lorena",
+            "email": "lorena.rider@hotmail.com",
+            "password": "pbkdf2_sha256$320000$5jUa4rBWwV0323B2gRcLs6$ZTsL+9WvH1yJ1VuuGRAmwFni1vGMO9kEA/skB8pqtks="
+        }
+    },
+    {
+        "model": "pages.message",
+        "pk": 1,
+        "fields": {
+            "sender": 2,
+            "recipient": 3,
+            "content": "TEST...123",
+            "timestamp": "2021-12-29 02:21:00.000000 +02:00",
+            "opened": "False"
+        }
+    },
+    {
+        "model": "pages.message",
+        "pk": 2,
+        "fields": {
+            "sender": 3,
+            "recipient": 2,
+            "content": "Works great! Little primitive though...",
+            "timestamp": "2021-12-29 02:25:00.000000 +02:00",
+            "opened": "False"
+        }
+    },
+    {
+        "model": "pages.message",
+        "pk": 3,
+        "fields": {
+            "sender": 2,
+            "recipient": 3,
+            "content": "Yeah, but this is totally not a honeypot!",
+            "timestamp": "2021-12-29 02:28:00.000000 +02:00",
+            "opened": "False"
+        }
+    }
+]

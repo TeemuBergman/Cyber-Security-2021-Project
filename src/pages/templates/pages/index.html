@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>SecuMsgr - It's safe, we promise!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{% static 'logo.png' %}" class="logo-img" />
+            <h1 class="logo-text">SecuMsgr</h1>
+        </div>
+
+        <div class="side-left">
+            <div class="menu-container">
+                <h4>Select a recipient</h4>
+                {% for account in accounts %}
+                <a href="id={{ account.id }}">> {{ account.username }}</a><br />
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="side-right">
+            <div class="messages">
+                {% for message in messages %}
+                {% if message.sender.id == request.user.id %}
+                    <div class="message-right">
+                {% else %}
+                    <div class="message-left">
+                {% endif %}
+                        <div>
+                            <p class="username">{{ message.sender.username }}</p>
+                            <p class="content">{{ message.content }}</p>
+                            <p class="timestamp">[{{ message.timestamp }}]</p>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                {% endfor %}
+            </div>
+        
+            <div class="footer">
+                <form method="POST" class="send-message">
+                    {% csrf_token %}
+                    <input name="content" type="text" placeholder="Enter your message..." required />
+                    <button type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

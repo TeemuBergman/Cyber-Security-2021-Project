@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>SecuMsgr - It's safe, we promise!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <div class=container>
+        <div class="header">
+            <img src="{% static 'logo.png' %}" class="logo-img" />
+            <h1 class="logo-text">SecuMsgr</h1>
+        </div>
+
+        <h3>Login</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

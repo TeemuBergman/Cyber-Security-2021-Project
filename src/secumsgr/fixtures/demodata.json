@@ -38,7 +38,7 @@
         }
     },
     {
-        "model": "pages.message",
+        "model": "secumsgr.message",
         "pk": 1,
         "fields": {
             "sender": 2,
@@ -49,7 +49,7 @@
         }
     },
     {
-        "model": "pages.message",
+        "model": "secumsgr.message",
         "pk": 2,
         "fields": {
             "sender": 3,
@@ -60,13 +60,35 @@
         }
     },
     {
-        "model": "pages.message",
+        "model": "secumsgr.message",
         "pk": 3,
         "fields": {
             "sender": 2,
             "recipient": 3,
             "content": "Yeah, but this is totally not a honeypot!",
             "timestamp": "2021-12-29 02:28:00.000000 +02:00",
+            "opened": "False"
+        }
+    },
+    {
+        "model": "secumsgr.message",
+        "pk": 4,
+        "fields": {
+            "sender": 2,
+            "recipient": 4,
+            "content": "Hi Lorena, so nice to see you here!",
+            "timestamp": "2021-12-31 12:28:00.000000 +02:00",
+            "opened": "False"
+        }
+    },
+    {
+        "model": "secumsgr.message",
+        "pk": 5,
+        "fields": {
+            "sender": 4,
+            "recipient": 2,
+            "content": "Hello there Chrissy! What's up? :)",
+            "timestamp": "2021-12-31 13:18:00.000000 +02:00",
             "opened": "False"
         }
     }

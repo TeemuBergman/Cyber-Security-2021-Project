@@ -37,7 +37,7 @@
                     <div class="message-left">
                         <div>
                 {% endif %}
-                        
+                            <!-- Debug, remove before prodcution: {{ message.id }} -->
                             <p class="username">{{ message.sender.username }}</p>
                             <p class="content">{{ message.content }}</p>
                             <p class="timestamp">[{{ message.timestamp }}]</p>

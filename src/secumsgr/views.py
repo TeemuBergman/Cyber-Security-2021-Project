@@ -32,8 +32,8 @@ def registerView(request):
         new_user = authenticate(username=username, password=password)
         login(request, new_user)
         # Event logging
-        logger = logging.getLogger('SecuMsgr')
-        logger.info(new_user, " registered and logged in.")
+        logger = logging.getLogger('secumsgr')
+        logger.info((username, " registered and logged in."))
         return redirect('pre_messaging')
     return render(request, 'pages/register.html')
 
@@ -44,8 +44,8 @@ def deleteMessageView(request,  **kw_args):
     recipient_id = kw_args['recipient_id']
     message_id = kw_args['message_id']
     # Event logging
-    logger = logging.getLogger('SecuMsgr')
-    logger.warning(user, " deleted message ID:", message_id)
+    logger = logging.getLogger('secumsgr')
+    logger.warning((user, " deleted message ID:", message_id))
     # BUG: A01:2021 - Broken Access Control: Insecure direct object references (IDOR)
     Message.objects.filter(id=message_id).delete()
     return redirect('messaging', recipient_id)

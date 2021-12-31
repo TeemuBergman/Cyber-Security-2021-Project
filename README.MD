@@ -15,10 +15,10 @@ Make sure you have Python 3 and Django installed, then navigate with your termin
 
 #### User credentials
 
-- `admin : admin1``
-- ``chrissy : 123456`
-- nemo : g43W3w
-- ``lorena: ******`
+- `admin : admin1`
+- `chrissy : 123456`
+- `nemo : g43W3w`
+- `lorena: ******`
 
 It is recommended to login as Chrissy (most of the demo data on this account). Admin is the only superuser. All usernames are case sensitive.
 

@@ -6,12 +6,15 @@
 
 #### Installation instructions
 
-Clone or download project, confirm that you have Python 3 and Django installed, then navigate with your terminal to the project folder root and insert these commands:
+Clone or download project, confirm that you have Python 3 and Django installed, then navigate with your terminal to the project folder root and insert these commands*:
 
 - python3 manage.py migrate
 - python3 manage.py loaddata demodata.json
 - python3 manage.py runserver
-- open the browser at: localhost:8000
+
+Open the browser and navigate to: localhost:8000
+
+*On Windows use python instead of python3.
 
 #### User credentials
 

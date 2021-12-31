@@ -11,14 +11,13 @@ Make sure you have Python 3 and Django installed, then navigate with your termin
 - python3 manage.py migrate
 - python3 manage.py loaddata demodata.json
 - python3 manage.py runserver
-- open the browser at: localhost:8000.
+- open the browser at: localhost:8000
 
 #### User credentials
 
 - `admin : admin1`
 - `chrissy : 123456`
 - `nemo : g43W3w`
-- `lorena: ******`
+- `lorena : ******`
 
 It is recommended to login as Chrissy (most of the demo data on this account). Admin is the only superuser. All usernames are case sensitive.
-

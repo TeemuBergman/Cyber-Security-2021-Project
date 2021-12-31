@@ -12,16 +12,30 @@
 <body>
     <div class=container>
         <div class="header">
-            <img src="{% static 'logo.png' %}" class="logo-img" />
-            <h1 class="logo-text">SecuMsgr</h1>
+            <a href="/">
+                <img src="{% static 'logo.png' %}" class="logo-img" />
+                <h1 class="logo-text">SecuMsgr</h1>
+            </a>
         </div>
 
-        <h3>Login</h3>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Login</button>
-        </form>
+        <div class="side-right">
+            <div class="password-list">
+                <h2>Demo passwords!</h2>
+                <p>admin : admin1</p>
+                <p>chrissy : 123456</p>
+                <p>nemo : g43W3w</p>
+                <p>lorena : ******</p>
+            </div>
+            <div>
+                <h3>Login</h3>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

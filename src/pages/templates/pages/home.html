@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
-
+    <div class=container>
         <div class="header">
             <a class="login_logout" href="/login">[LOGIN]</a>
             <a href="/">
@@ -21,19 +20,13 @@
         </div>
 
         <div class="side-right">
-            <form method="POST" class="register">
-                {% csrf_token %}
-                <p>Username*</p>
-                <input name="username" type="text" required />
-                <p>Email*</p>
-                <input name="email" type="email" required />
-                <p>Password*</p>
-                <input name="password" type="password" required />
-                <p>* Field is mandatory</p>
-                <button type="submit">Register!</button>
-            </form>
+            <h3>Welcome to SecuMsgr!</h3>
+            <p>SecuMsgr is a secure messaging service where every registered user can communicate with other registered users directly. It's something like IRC, but only with 1-to-1 communication, user registering, data saving and bleeding edge security features. Actually it's nothing like IRC, this is better than that! <small>...and totally not a honeypot of any kind!</small></p>
+            <h3>Choose your destiny!</h3>
+            <a class="login" href="/login">[LOGIN]</a>
+            <a class="login" href="/register">[REGISTER]</a>
         </div>
-        
+
     </div>
 </body>
 </html>

@@ -3,7 +3,7 @@
         "model": "auth.user",
         "pk": 1,
         "fields": {
-            "username": "ADMIN",
+            "username": "admin",
             "email": "admin@cs_project.org",
             "password": "pbkdf2_sha256$320000$DEuLBnyuY2BfdIWeDHn9U1$Uogmc72M/C1xIiN2ANg5+332E2dV7LFOPG3H7rSS/G8=",
             "is_superuser": 1,
@@ -14,7 +14,7 @@
         "model": "auth.user",
         "pk": 2,
         "fields": {
-            "username": "Chrissy",
+            "username": "chrissy",
             "email": "chris@gmail.com",
             "password": "pbkdf2_sha256$320000$rDomJFGz2dwroINCWgGiOZ$3YidXTd2nrJSais3958chbUVCeFBgMBB7XiJTQg26aI="
         }
@@ -23,7 +23,7 @@
         "model": "auth.user",
         "pk": 3,
         "fields": {
-            "username": "Nemo",
+            "username": "nemo",
             "email": "nemo@helsinki.fi",
             "password": "pbkdf2_sha256$320000$ebB2ULs236RLKD0cxDRrpu$2jxH1Fbbn1NSdE7+pSjrsgRkBSqIj+O8kj9St7PMoH0="
         }
@@ -32,7 +32,7 @@
         "model": "auth.user",
         "pk": 4,
         "fields": {
-            "username": "Lorena",
+            "username": "lorena",
             "email": "lorena.rider@hotmail.com",
             "password": "pbkdf2_sha256$320000$5jUa4rBWwV0323B2gRcLs6$ZTsL+9WvH1yJ1VuuGRAmwFni1vGMO9kEA/skB8pqtks="
         }

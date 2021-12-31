@@ -110,6 +110,11 @@ a {
     font-size: xx-small;
 }
 
+.delete_message, .login_logout {
+    color: red;
+    float: right;
+}
+
 /* Send message */
 
 .send-message 
@@ -122,6 +127,11 @@ a {
         font-size: small;
     }
 
-    button {
-        visibility: visible;
+    .chat-button {
+        visibility: hidden;
     }
+
+/* Other elements */
+.password-list {
+    float: right;
+}

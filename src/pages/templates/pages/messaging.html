@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <div class="header">
+            <a class="login_logout" href="/logout">[LOGOUT]</a>
             <img src="{% static 'logo.png' %}" class="logo-img" />
             <h1 class="logo-text">SecuMsgr</h1>
         </div>
@@ -30,10 +31,13 @@
                 {% for message in messages %}
                 {% if message.sender.id == request.user.id %}
                     <div class="message-right">
+                        <div>
+                            <a class="delete_message" href="/msg/id={{ message.recipient_id }}&del={{ message.id }}">[DEL]</a>
                 {% else %}
                     <div class="message-left">
-                {% endif %}
                         <div>
+                {% endif %}
+                        
                             <p class="username">{{ message.sender.username }}</p>
                             <p class="content">{{ message.content }}</p>
                             <p class="timestamp">[{{ message.timestamp }}]</p>
@@ -47,7 +51,7 @@
                 <form method="POST" class="send-message">
                     {% csrf_token %}
                     <input name="content" type="text" placeholder="Enter your message..." required />
-                    <button type="submit">
+                    <button class="chat-button" type="submit">
                 </form>
             </div>
         </div>

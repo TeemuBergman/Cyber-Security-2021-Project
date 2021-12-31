@@ -71,7 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'src.config.wsgi.application'
 
 LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/msg/'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

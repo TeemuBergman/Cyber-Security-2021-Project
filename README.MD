@@ -1,3 +1,6 @@
+### Project archived
+This project is one of the many practice assignments for my degree and there will be no more further development. This project contains multiple vulnerabilities (intentionally and unintentionally), so use it at your own risk!
+
 ## Project description
 
 <img src=".\documents\screenshot_1.PNG" alt="screenshot_1" style="zoom: 67%;" />
